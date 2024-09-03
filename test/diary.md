@@ -1,9 +1,39 @@
-<head>
-  <link crossorigin="anonymous" type="text/plain" rel="stylesheet" href="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/css/global.css">
-  <link crossorigin="anonymous" type="text/plain" rel="stylesheet" href="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/css/logbook_toolbar.css">
-  <script crossorigin="anonymous" type="text/plain" src="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/js/logbook_toolbar.js"></script>
-  <script crossorigin="anonymous" type="text/plain" src="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/js/day_planner_btn.js"></script>
-</head>
+<script>
+  (function () {
+    function loadFile(url, onLoad) {
+      let req = new XMLHttpRequest();
+      req.open("GET", url, true);
+      req.addEventListener("load", (e) => onLoad(req));
+      req.send();
+    }
+    function loadStyle(url) {
+      loadFile(url, (req) => {
+        let styleElem = document.createElement("style");
+        styleElem.innerText = req.responseText;
+        document.head.appendChild(styleElem);
+      });
+    }
+    function loadScript(url) {
+      loadFile(url, (req) => {
+        let scriptElem = document.createElement("script");
+        scriptElem.innerText = req.responseText;
+        document.body.appendChild(scriptElem);
+      });
+    }
+
+    let styles = [
+      "https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/css/global.css",
+      "https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/css/logbook_toolbar.css",
+    ];
+    let scripts = [
+      "https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/js/logbook_toolbar.js",
+      "https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/js/day_planner_btn.js",
+    ];
+
+    styles.forEach((url) => loadStyle(url));
+    scripts.forEach((url) => loadScript(url));
+  })();
+</script>
 
 # Diary
 
