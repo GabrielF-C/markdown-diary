@@ -1,0 +1,46 @@
+#topToolbar {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 46% auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 6vh;
+    padding: 5px;
+    margin-left: 5px;
+    z-index: 1000;
+    background-color: rgba(245, 245, 245, 0.8);
+    border-radius: 5px;
+}
+
+.msg-elem {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    max-width: 50vw;
+}
+
+.fade-out {
+    opacity: 0.2;
+    transition: opacity 3s linear;
+}
+
+#topToolbar label {
+    color: black;
+}
+
+#topToolbar button {
+    flex-grow: 1;
+}
+
+#toggleToolbarBtn {
+    top: 0;
+    right: 0;
+}
+
+#exportDataBtn {
+    top: calc(3vh + 5px);
+    right: 0;
+}

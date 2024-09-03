@@ -1,0 +1,101 @@
+:root {
+    --h1-color: ghostwhite;
+    --h3-color: lightsalmon;
+    --h4-color: lightgreen;
+    --em-color: lightyellow;
+    --strong-color: lightyellow;
+    --floating-btn-bg-color: ivory;
+    --err-txt-color: white;
+    --err-bg-color: rgb(131, 15, 15);
+    --warn-txt-color: black;
+    --warn-bg-color: rgb(225 211 8);
+    --info-txt-color: whitesmoke;
+    --info-bg-color: rgb(41, 65, 197);
+}
+
+h1 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: var(--h1-color);
+}
+
+h2 {
+    border-bottom: 1px dashed gray;
+}
+
+h3 {
+    color: var(--h3-color);
+}
+
+h4 {
+    color: var(--h4-color);
+}
+
+input[type="checkbox"]:disabled {
+    filter: invert(100%) brightness(4);
+}
+
+em {
+    color: var(--em-color);
+}
+
+strong {
+    color: var(--strong-color);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    min-width: 12px;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.error {
+    background-color: var(--err-bg-color);
+    color: var(--err-txt-color);
+}
+
+.warn {
+    background-color: var(--warn-bg-color);
+    color: var(--warn-txt-color);
+}
+
+.info {
+    background-color: var(--info-bg-color);
+    color: var(--info-txt-color);
+}
+
+.floating-btn {
+    position: fixed;
+    z-index: 1000;
+    height: 3vh;
+    margin: 5px;
+    background-color: var(--floating-btn-bg-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.floating-btn:hover {
+    filter: invert();
+}
+
+.p-5 {
+    padding: 5px !important;
+}
+
+.pl-5, .plr-5 {
+    padding-left: 5px !important;
+}
+
+.pr-5, .plr-5 {
+    padding-right: 5px !important;
+}
+
+tr:nth-child(even) {
+    background-color: hsl(0, 0%, 14%);
+}
