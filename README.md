@@ -10,12 +10,12 @@ Some or all of the extensions listed below may not be required for the system to
 ## How to setup
 
 1. Open your markdown file in VSCode and add the following at the start of the file :
-    ```
+    ```html
     <head>
-      <link rel="stylesheet" href="assets/journal/css/global.css">
-      <link rel="stylesheet" href="assets/journal/css/logbook_toolbar.css">
-      <script src="assets/journal/js/logbook_toolbar.js"></script>
-      <script src="assets/journal/js/day_planner_btn.js"></script>
+      <link rel="stylesheet" href="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/css/global.css">
+      <link rel="stylesheet" href="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/css/logbook_toolbar.css">
+      <script src="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/js/logbook_toolbar.js"></script>
+      <script src="https://raw.githubusercontent.com/GabrielF-C/markdown-diary/main/js/day_planner_btn.js"></script>
     </head>
     ```
 2. `Ctrl`+`Shift`+`P` and run `Markdown: Change Preview Security Settings` (setting may only apply to the current workspace)
