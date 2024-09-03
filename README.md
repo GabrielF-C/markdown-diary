@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Some of the extensions listed below may not be required for the system to work, this is just what I use.
+Some or all of the extensions listed below may not be required for the system to work, this is just what I use.
 
 - Visual Studio Code
 - (extension) Markdown All in One
